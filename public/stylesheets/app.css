@@ -15,3 +15,35 @@ body { padding-top: 70px;
 #upandup{
     margin-top: 50px;
 }
+
+.card-blockquote p{
+    font-size: 17px;
+}
+
+.panel-body li,p{
+          text-align: justify;
+          font-size: 1.5em;
+          font-family: 'Quicksand', sans-serif;
+        }
+        
+        .panel-heading h3{
+          font-size: 2em;
+         font-family: 'Quicksand', sans-serif;
+        }
+        
+ #content{
+        	text-align: center;
+        	padding-top: 5%;
+        	padding-bottom:5%;
+        	font-family: 'Open Sans', sans-serif;
+        }
+
+
+ 
+ th{
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+     text-shadow:  1px 1px 2px black;
+     font-size: 1.25em;
+ }
+        

@@ -7,7 +7,7 @@ var bodyParser  = require("body-parser"),
    //APP CONFIG================
    
 //   mongoose.connect("mongodb://localhost/piyush");
-   mongoose.connect("mongodb://Sumit:behaPPYhaha99!@ds145283.mlab.com:45283/piyush_db");
+   mongoose.connect("mongodb://db_user:db_pass@ds127894.mlab.com:27894/reg-balrad");
    app.set("view engine", "ejs");
    app.use(express.static("public"));
    app.use(bodyParser.urlencoded({extended: true}));
@@ -16,11 +16,13 @@ var bodyParser  = require("body-parser"),
    
     var aboutSchema = new mongoose.Schema({
         name: String,
-        company: String,
+        age: String,
+        sex: String,
         phone: String,
         email: String,
-        skype: String,
-        message: String,
+        hospital: String,
+        city: String,
+        state: String,
         created: {type: Date, default: Date.now}
     });
     
@@ -88,5 +90,5 @@ app.post("/abouts", function(req, res){
 
 
 app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("Piyush server is up")
+    console.log("balrad server is up")
 })
